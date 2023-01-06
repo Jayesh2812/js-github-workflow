@@ -13,7 +13,7 @@ jobs:
         id: hello
         uses: Jayesh2812/js-github-action@v1.6
         with:
-          who-to-greet: $NAME
+          who-to-greet: ${{ secrets.NAME }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
