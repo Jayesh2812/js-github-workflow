@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Jayesh2812/js-github-action@v1.1
+        uses: Jayesh2812/js-github-action@v1.2
         with:
           who-to-greet: 'Jayesh Deorukhkar'
       # Use the output from the `hello` step
