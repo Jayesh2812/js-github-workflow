@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
       - name: Hello world action step
         id: hello
         uses: Jayesh2812/js-github-action@v1.6
