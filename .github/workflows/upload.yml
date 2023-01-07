@@ -17,7 +17,7 @@ jobs:
           path: test-report/
           management_token: ${{ secrets.MANAGEMENT_TOKEN }}
           api_key: blt858e12437ac2679e
-          parent_uid: blt7e065426f910165e
+          # parent_folder_uid: blt7e065426f910165e
 
 
       - name: Link for Report
