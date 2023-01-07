@@ -12,7 +12,7 @@ jobs:
 
       - name: Upload
         id: upload
-        uses: Jayesh2812/upload-report-to-cs@v1.4
+        uses: Jayesh2812/upload-report-to-cs@v1.6
         with: 
           path: test-report/
           management_token: managementtoken
