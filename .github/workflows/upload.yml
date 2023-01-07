@@ -12,7 +12,7 @@ jobs:
 
       - name: Upload
         id: upload
-        uses: Jayesh2812/upload-report-to-cs
+        uses: Jayesh2812/upload-report-to-cs@v1.2
         with: 
           path: test-report/
 
