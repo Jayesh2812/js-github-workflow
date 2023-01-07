@@ -16,7 +16,7 @@ jobs:
         with: 
           path: test-report/
           management_token: ${{ secrets.MANAGEMENT_TOKEN }}
-          api_key: ${{ secrets.API_KEY }}
+          api_key: blt858e12437ac2679e
           parent_uid: blt7e065426f910165e
 
 
