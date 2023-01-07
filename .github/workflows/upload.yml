@@ -12,12 +12,12 @@ jobs:
 
       - name: Upload
         id: upload
-        uses: Jayesh2812/upload-report-to-cs@v1.6
+        uses: Jayesh2812/upload-report-to-cs@v1.8
         with: 
           path: test-report/
-          management_token: managementtoken
-          api_key: apikey
-          parent_uid: parentuid
+          management_token: ${{ secrets.MANAGEMENT_TOKEN }}
+          api_key: ${{ secrets.API_KEY }}
+          parent_uid: blt7e065426f910165e
 
 
       - name: Link for Report
