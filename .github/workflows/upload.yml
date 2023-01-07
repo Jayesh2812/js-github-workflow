@@ -15,6 +15,10 @@ jobs:
         uses: Jayesh2812/upload-report-to-cs@v1.4
         with: 
           path: test-report/
+          management_token: managementtoken
+          api_key: apikey
+          parent_uid: parentuid
+
 
       - name: Link for Report
         run: echo "${{ steps.upload.outputs.link }}"
