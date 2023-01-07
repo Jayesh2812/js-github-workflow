@@ -1,0 +1,21 @@
+on: [push]
+
+jobs:
+  upload-file:
+    runs-on: ubuntu-latest
+    name: Upload test report to CS
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+
+      - name: Upload
+        id: upload
+        uses: Jayesh2812/upload-report-to-cs
+        with: 
+          path: test-report/
+
+      - name: Link for Report
+        run: echo "${{ steps.upload.outputs.link }}"
+      
