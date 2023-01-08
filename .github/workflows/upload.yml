@@ -12,14 +12,12 @@ jobs:
 
       - name: Upload
         id: upload
-        uses: Jayesh2812/upload-report-to-cs@v1.9
-        with: 
+        uses: Jayesh2812/upload-to-cs@v0.1.0
+        with:
           path: test-report/
           management_token: ${{ secrets.MANAGEMENT_TOKEN }}
           api_key: blt858e12437ac2679e
           parent_folder_uid: blt7e065426f910165e
 
-
       - name: Link for Report
         run: echo "${{ steps.upload.outputs.link }}"
-      
