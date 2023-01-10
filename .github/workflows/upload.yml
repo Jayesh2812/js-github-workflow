@@ -14,10 +14,10 @@ jobs:
         id: upload
         uses: Jayesh2812/upload-to-cs@v1.4
         with:
-          file_path: test-report/index.htl
+          file_path: test-report/index.html
           management_token: ${{ secrets.MANAGEMENT_TOKEN }}
           api_key: blt858e12437ac2679e
           folder_uid: blt7e065426f910165e
 
       - name: Link for E2E Report
-        run: echo "${{ steps.upload.outputs.link }}"
+        run: echo "${{ steps.upload.outputs.link }} >> $GITHUB_STEP_SUMMARY"
