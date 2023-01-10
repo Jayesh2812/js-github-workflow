@@ -21,3 +21,6 @@ jobs:
 
       - name: Link for E2E Report
         run: echo "${{ steps.upload.outputs.link }} >> $GITHUB_STEP_SUMMARY"
+
+  - name: Adding markdown
+    run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
