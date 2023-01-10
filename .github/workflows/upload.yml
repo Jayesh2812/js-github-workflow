@@ -20,7 +20,7 @@ jobs:
           folder_uid: blt7e065426f910165e
 
       - name: Link for E2E Report
-        run: echo "${{ steps.upload.outputs.link }}"" >> $GITHUB_STEP_SUMMARY
+        run: echo "${{ steps.upload.outputs.link }}" >> $GITHUB_STEP_SUMMARY
 
       - name: Adding markdown
         run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
