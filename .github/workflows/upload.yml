@@ -12,7 +12,7 @@ jobs:
 
       - name: Upload E2E Report
         id: upload
-        uses: Jayesh2812/upload-to-cs@v1.5
+        uses: Jayesh2812/upload-to-cs@v1.6
         with:
           file_path: test-report/index.html
           management_token: ${{ secrets.MANAGEMENT_TOKEN }}
