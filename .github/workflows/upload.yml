@@ -12,7 +12,7 @@ jobs:
 
       - name: Upload E2E Report
         id: upload
-        uses: Jayesh2812/upload-to-cs@v1.4
+        uses: Jayesh2812/upload-to-cs@v1.5
         with:
           file_path: test-report/index.html
           management_token: ${{ secrets.MANAGEMENT_TOKEN }}
@@ -21,6 +21,3 @@ jobs:
 
       - name: Link for E2E Report
         run: echo "Link for E2E Report - ${{ steps.upload.outputs.link }}" >> $GITHUB_STEP_SUMMARY
-
-      - name: Adding markdown
-        run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
